@@ -1,8 +1,8 @@
 # Spring MVC Stateful Expression Calculator
 
-Create a web app serving expression value calculating.
+web app serving expression value calculating.
 
-It must serve `PUT`, `GET`, `DELETE` requests and keep user sessions.
+It  serves `PUT`, `GET`, `DELETE` requests and keeps user sessions.
 
 Users can put expression to evaluate or variable values via `PUT` requests.
 
@@ -25,5 +25,3 @@ Users may get the value of evaluated expression by execution `GET` request to `/
 In case when the expression is set, and it may be evaluated, web app should return `200` status codes and calculated integer value as a response body.\
 In case when the expression may not be calculated due to lack of data, webapp should return `409` status code and reason of this error.  
 
-All calculations must be an integer.
-Webapp must be implemented on the basis of Spring MVC components. 
